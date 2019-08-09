@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="col-md-12">
+   <p class="text-muted">Interpolation data binding{{mynm}}</p>
+  </div>
+</div>
+
+<div class="row">
+        <div class="col-md-12">
+         <input type="typ">
+        </div>
+      </div>
+
+      <div class="row">
+            <div class="col-md-12">
+           <p [style.border]="'1px solid red'">this is style binding</p>
+            </div>
+       </div>
+
+       <div class="row">
+            <div class="col-md-12">
+           <p [class.alert]="true" [class.alert-info]="true">this is property binding
+
+           </p> 
+                   </div>
+       </div>
+
+       <div class="row">
+            <div class="col-md-12">
+           <p [attr.mynm]="mynm" > hgfhfgff</p>
+        
+                   </div>
+       </div>
+
+       <div class="row">
+            <div class="col-md-12">
+           <input (click)="myclick($event)" type="button" value="okay" class="btn btn-primary">
+        
+                   </div>
+       </div>
+      
+       <div class="row">
+            <div class="col-md-12">
+           <input (keyup)="myclick($event)" type="text" placeholder="enter text">
+        
+                   </div>
+       </div>
+       <div class="row">
+            <div class="col-md-12">
+          <input type="text" [(ngModel)]="tw">{{tw}}
+                   </div>
+       </div>
+
+       <div class="row">
+        <div class="col-md-12">
+          <input type="text" [value]="val">
+          <input type="button" (click)="setVal(1)" value="1">
+          <input type="button" (click)="setVal(2)" value="2">
+          <input type="button" (click)="setVal(3)" value="3">
+          <input type="button" (click)="setVal(4)" value="4">
+        </div>
+       </div>
+
+
+
+       <app-extension></app-extension>
+      

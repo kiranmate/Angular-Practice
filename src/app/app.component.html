@@ -1,0 +1,59 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container">
+<!--
+  <div class="row">
+    <div class="col-md-12">
+      <h1> angular</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+
+      <app-fist-comp></app-fist-comp>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+    
+      <app-jombo></app-jombo>
+    </div>
+  </div>
+
+  
+      <app-databinding></app-databinding>
+      <app-local-ref-cont-vw-child>
+<div class="row">
+  <div class="alert alert-info" #newdv>
+   This is just example
+  </div>
+</div>
+
+      </app-local-ref-cont-vw-child>
+   
+<app-cust-alert [ttl]="'android is mobile os'" typ="'info'" (btnclk)="Onbtn($event)"  ></app-cust-alert>
+<app-cust-alert [ttl]="'angular is a framework'" typ="'warning'" ></app-cust-alert>
+<div class="row">
+  <div class="col-md-12">
+    <p>
+      clicked title is{{ev?.ttl}}
+    </p>
+
+    <p>
+      clicked type is{{ev?.typ}}
+    </p>
+  </div>
+</div>
+
+<app-int-comp-com-v1></app-int-comp-com-v1>
+<app-directive></app-directive>
+<app-lifecycle [demo]="title" *ngIf="isSh"></app-lifecycle>
+<input type="button" value="Okay" class="btn btn-info" (click)="isSh=!isSh">
+
+<input type="button" value="Change Value" class="btn btn-warning" (click)="Onbtn()">
+-->
+<app-services></app-services>
+
+
+</div>

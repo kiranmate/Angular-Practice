@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-12">
+        <h5> Alert string is {{evAl.al}}</h5>
+       <!-- {{EvAL.al}}-->
+    </div>
+</div>
+<div class="row">
+        <div class="col-md-6">
+              
+                <app-al-pk (picked)="capturedAlert($event)"></app-al-pk>
+            </div>
+    <div class="col-md-6">
+       
+       <app-al-mn [al]="evAl"></app-al-mn>
+    </div>
+</div>
